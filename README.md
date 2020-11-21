@@ -9,7 +9,7 @@ After checking out the project, it's just 2 commands to build
     ./mkdirs.sh
     make
 
-`mkdir.sh` will create the bin and build directories and their subdirectories. It only needs to be run the first time.
+`mkdirs.sh` will create the bin and build directories and their subdirectories. It only needs to be run the first time.
 
 ### Working on a Day's Solution
 
