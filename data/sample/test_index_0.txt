@@ -1,0 +1,16 @@
+#format is day,part,filename,expected result,any extra arguments (comma-separated)
+0,1,test_cases/day0_test1.txt,3
+0,1,test_cases/day0_test2.txt,3
+#This is a comment
+0,1,test_cases/day0_test3.txt,0
+0,1,test_cases/day0_test4.txt,-6
+0,1,day0_input.txt,569
+0,2,test_cases/day0_test1.txt,-3
+#The below test case shows that the answer can be quoted, if a comma is in the answer (happened in 2018)
+0,2,test_cases/day0_test2.txt,'-3'
+0,2,test_cases/day0_test3.txt,0
+#a,b,c are extra parms. Not worrying about them in this program, but showing how to do that
+#The extra parameters are useful when the sample will show a program runnign for 10 times, 
+# but we really run it 1000000 times. This allows that value to be specified without recompiling
+0,2,test_cases/day0_test4.txt,6,a,b,c
+0,2,day0_input.txt,-569
