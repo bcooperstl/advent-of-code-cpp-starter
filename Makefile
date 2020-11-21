@@ -75,6 +75,7 @@ clean:
 	build/runner/aoc_tests.o  \
 	build/runner/file_utils.o  \
 	build/solutions/aoc_day.o  \
+	build/solutions/aoc_day_0.o  \
 	build/solutions/aoc_days.o  \
 	build/aoc.o  \
 	bin/lib/librunner.a  \
@@ -85,6 +86,7 @@ all: build/runner/aoc_test.o  \
 	build/runner/aoc_tests.o  \
 	build/runner/file_utils.o  \
 	build/solutions/aoc_day.o  \
+	build/solutions/aoc_day_0.o  \
 	build/solutions/aoc_days.o  \
 	build/aoc.o  \
 	bin/lib/librunner.a  \
