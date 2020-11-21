@@ -13,7 +13,7 @@ After checking out the project, it's just 2 commands to build
 
 ### Working on a Day's Solution
 
-The starter comes with a Day 0 implementation, which is based on Advent of Code 2018, day 1, part 1. The part 1 solution matches the problem, and the part 2 solution the same as part 1, except it gives the negation of the part 1 result for a solution. Looking at `include/aoc_day_0.h`, `src/include/aoc_day_0.cpp`, and `src/include/aoc_days.cpp` will show all the coding needed to hook in a new day.
+The starter comes with a Day 0 implementation, which is based on Advent of Code 2018, day 1, part 1. The part 1 solution matches the problem, and the part 2 solution the same as part 1, except it gives the negation of the part 1 result for a solution. Looking at [`aoc_day_0.h`](include/solutions/aoc_day_0.h), [`/aoc_day_0.cpp`](src/solutions/aoc_day_0.cpp), and [`aoc_days.cpp`](src/solutions/aoc_days.cpp) will show all the coding needed to hook in a new day.
 
 Each day's solution will inherit from the AocDay class (include/solutions/aoc_day.h) as is done in include/solutions/aoc_day_0.h .
 
@@ -44,12 +44,12 @@ The final executable is built as bin/aoc
 There are some helper functions in the `FileUtils` class to read in and parse an input file. 
 
 `bool read_as_list_of_strings(string filename, vector<string> & lines)` - Read the file given by `filename` and return the lines of the file in the `lines` vector.  
-`bool read_as_list_of_split_strings(string filename, vector<vector<string>> & split_strings, char delimiter, char quote_char, char comment_char)` - Read the file given by filename, return it as a list of list of strings in the `split_strings` vector. `delimiter` identfies a delimiter to identify how to split the strings. `quote_char` gives a way to allow the delimiter to appear in a string by quoting around it. `comment_char` allows for a line to be skipped from the output if it starts with this character. This probably sounds like overkill, but I use a bunch of this with my test file format. See Testing.MD for an example and more details.  
+`bool read_as_list_of_split_strings(string filename, vector<vector<string>> & split_strings, char delimiter, char quote_char, char comment_char)` - Read the file given by filename, return it as a list of list of strings in the `split_strings` vector. `delimiter` identfies a delimiter to identify how to split the strings. `quote_char` gives a way to allow the delimiter to appear in a string by quoting around it. `comment_char` allows for a line to be skipped from the output if it starts with this character. This probably sounds like overkill, but I use a bunch of this with my test file format. See [testing.md](testing.md) for an example and more details.  
 `bool read_as_list_of_split_longs(string filename, vector<vector<long>> & split_longs, char delimiter, char quote_char, char comment_char)` - Same as `read_as_list_of_split_strings` but with longs. Think of it as an easy way to read in an intcode program from 2019, if you will.
 
 
 ## Running a solution
-There are three modes to run this program as shown in the usage. This section describes how to run one input file through. The testing.md file describes the two other modes.  
+There are three modes to run this program as shown in the usage. This section describes how to run one input file through. The [testing.md](testing.md) file describes the two other modes.  
 The command line is:
 
     bin/aoc -d day -p part -f filename [extra_args...]
